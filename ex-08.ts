@@ -103,10 +103,15 @@
 		// TypeError: Cannot read properties of undefined (reading 'length')
 }
 
+//////////////////////////////
+// 확실하게 할당된 속성
+
 {
 	class ActivitiesQueue {
 		pending!: string[];
 			// ! means "I know I know"
+			// "내가 뭘 하는지 알고 하는 거니까 입 좀 다물어"
+			// "나중에 할당 될 거야"
 
 		initialize(pending: string[]) {
 			this.pending = pending;
@@ -178,8 +183,8 @@
 	}
 
 	const quote = new RandomQuote();
-	quote.explicit; // string
-	quote.implicit; // "Home is the nicest word there is."
+	quote.explicit; // (property) RandomQuote.explicit: string
+	quote.implicit; // (property) RandomQuote.implicit: "Home is the nicest word there is."
 }
 
 ////////////////////////////////////////////////////////////

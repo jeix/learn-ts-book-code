@@ -126,8 +126,10 @@
 
 	publishDates.Beloved.toString();
 		// Runtime Error
+		// TypeError: Cannot read properties of undefined (reading 'toString')
 }
 
+//////////////////////////////
 // 속성과 인덱스 시그니처 결합
 
 {
@@ -146,6 +148,7 @@
 	};
 }
 
+//////////////////////////////
 // 숫자 인덱스 시그니처
 
 {
