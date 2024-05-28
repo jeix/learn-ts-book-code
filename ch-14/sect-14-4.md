@@ -29,6 +29,21 @@ namespace Settings {
 console.log("Initialized", Settings.describe());
 ```
 
+```sh
+$ tsc --init
+
+$ tsc -b
+
+$ echo "" > _index.js
+$ cat settings/constants.js >> _index.js
+$ cat settings/describe.js >> _index.js
+$ cat index.js >> _index.js
+
+$ node _index.js
+Initializing My Application at version 1.2.3
+Initialized My Application at version 1.2.3
+```
+
 ### 14.4.2 중첩된 네임스페이스
 
 ### 14.4.3 타입 정의에서 네임스페이스
