@@ -1,4 +1,6 @@
 
+## 1.5 로컬에서 시작하기
+
 ```sh
 $ npm i -g typescript
 
@@ -8,6 +10,8 @@ $ which tsc
 $ tsc --version
 Version 5.4.5
 ```
+
+### 1.5.1 로컬에서 실행하기
 
 ```sh
 $ tsc --init
@@ -36,3 +40,5 @@ Found 1 error in index.ts:1
 $ cat index.js
 console.print('Hello World');
 ```
+
+:wq
